@@ -37,7 +37,7 @@ cd project-name
 - Create a reference base for study, interviews, and proof of concepts.
 - Explore modern architecture and security patterns.
 
-## 🧠 Author
+## 👨🏻‍💻 Author
 Douglas Hauschild  
 [LinkedIn](https://www.linkedin.com/in/douglas-hauschild-66449122b/) | [GitHub](https://github.com/douglashauschild)
 
