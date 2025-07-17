@@ -1,0 +1,35 @@
+# Eclipse
+.project
+.classpath
+.settings/
+*.launch
+
+# Maven
+target/
+!.mvn/wrapper/maven-wrapper.jar
+.mvn/timing.properties
+
+# Logs
+*.log
+
+# IDEs
+*.iml
+.idea/
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Backup files
+*~
+*.swp
+*.bak
+
+# Test reports
+surefire-reports/
+jacoco.exec
+
+# Local env
+.env
+*.local
