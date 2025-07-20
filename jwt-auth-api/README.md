@@ -26,12 +26,12 @@ This project covers the fundamentals of secure login with token generation, prot
 ```
 📦 jwt-auth-api
  └── src/main/java/com/github/douglashauschild/jwtauthapi
-		├── controller # REST endpoints
-		├── dto # Request and response models (record types)
-		├── entity # Domain model (User, Role)
-		├── repository # JPA repositories
-		├── security # JWT logic and Spring Security config
-		└── service # Business logic (AuthService)
+	├── controller # REST endpoints
+	├── dto # Request and response models (record types)
+	├── entity # Domain model (User, Role)
+	├── repository # JPA repositories
+	├── security # JWT logic and Spring Security config
+	└── service # Business logic (AuthService)
 ```
 
 ## 🚀 Running the Project
