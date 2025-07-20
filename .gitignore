@@ -3,6 +3,9 @@
 .classpath
 .settings/
 *.launch
+**/.factorypath
+**/bin/**/*.class
+**/src/module-info.java
 
 # Maven
 target/
