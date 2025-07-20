@@ -23,13 +23,16 @@ This project covers the fundamentals of secure login with token generation, prot
 
 
 ## 📁 Project Structure
-src/main/java/com/github/douglashauschild/jwtauthapi
-├── controller # REST endpoints
-├── dto # Request and response models (record types)
-├── entity # Domain model (User, Role)
-├── repository # JPA repositories
-├── security # JWT logic and Spring Security config
-└── service # Business logic (AuthService)
+```
+📦 jwt-auth-api
+ └── src/main/java/com/github/douglashauschild/jwtauthapi
+		├── controller # REST endpoints
+		├── dto # Request and response models (record types)
+		├── entity # Domain model (User, Role)
+		├── repository # JPA repositories
+		├── security # JWT logic and Spring Security config
+		└── service # Business logic (AuthService)
+```
 
 ## 🚀 Running the Project
 You can run it with Maven:
@@ -46,11 +49,15 @@ java -jar target/jwt-auth-api-0.0.1-SNAPSHOT.jar
 
 ###  Register a new user
 ```bash
-curl -X POST http://localhost:8080/auth/register -H "Content-Type: application/json" -d '{"username":"john", "password":"123456"}'
+curl -X POST http://localhost:8080/auth/register \
+  -H "Content-Type: application/json" \
+  -d '{"username":"john", "password":"123456"}'
 ```
 ### Login and get JWT
 ```bash
-curl -X POST http://localhost:8080/auth/login -H "Content-Type: application/json" -d '{"username":"john", "password":"123456"}'
+curl -X POST http://localhost:8080/auth/login \
+  -H "Content-Type: application/json" \
+  -d '{"username":"john", "password":"123456"}'
 ```
 Response:
 ```json
@@ -80,6 +87,3 @@ This project is ideal for:
 ## 👨🏻‍💻 Author
 Douglas Hauschild  
 [LinkedIn](https://www.linkedin.com/in/douglas-hauschild-66449122b/) | [GitHub](https://github.com/douglashauschild)
-
-## 📄 License
-This project is licensed under the MIT License.
