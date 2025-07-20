@@ -39,15 +39,19 @@ This project follows the principles of **Hexagonal Architecture**:
 - **Output adapters:** Implement domain ports (e.g., database repositories).
 
 ## 📁 Project Structure
-src/main/java/com/github/douglashauschild/hexagonalapi
-├── application # Application services (use cases)
-├── domain
-│ ├── model # Domain entities
-│ └── repository # Domain ports (interfaces)
-├── infrastructure
-│ ├── persistence # JPA repository implementations
-│ └── web # REST controllers (input adapters)
-└── config # Spring configuration classes
+
+```
+📦 hexagonal-api
+ └── src/main/java/com/github/douglashauschild/hexagonalapi
+		├── application # Application services (use cases)
+		├── domain
+		│ 		├── model # Domain entities
+		│ 		└── repository # Domain ports (interfaces)
+		├── infrastructure
+		│ 		├── persistence # JPA repository implementations
+		│ 		└── web # REST controllers (input adapters)
+		└── config # Spring configuration classes
+```
 
 ## 🚀 Running the Project
 You can run it with Maven:
@@ -98,6 +102,3 @@ This project is ideal for:
 ## 👨🏻‍💻 Author
 Douglas Hauschild  
 [LinkedIn](https://www.linkedin.com/in/douglas-hauschild-66449122b/) | [GitHub](https://github.com/douglashauschild)
-
-## 📄 License
-This project is licensed under the MIT License.
