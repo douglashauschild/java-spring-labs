@@ -43,14 +43,14 @@ This project follows the principles of **Hexagonal Architecture**:
 ```
 📦 hexagonal-api
  └── src/main/java/com/github/douglashauschild/hexagonalapi
-		├── application # Application services (use cases)
-		├── domain
-		│ 		├── model # Domain entities
-		│ 		└── repository # Domain ports (interfaces)
-		├── infrastructure
-		│ 		├── persistence # JPA repository implementations
-		│ 		└── web # REST controllers (input adapters)
-		└── config # Spring configuration classes
+	├── application # Application services (use cases)
+	├── domain
+	│     ├── model # Domain entities
+	│     └── repository # Domain ports (interfaces)
+	├── infrastructure
+	│     ├── persistence # JPA repository implementations
+	│     └── web # REST controllers (input adapters)
+	└── config # Spring configuration classes
 ```
 
 ## 🚀 Running the Project
@@ -68,19 +68,23 @@ java -jar target/hexagonal-api-0.0.1-SNAPSHOT.jar
 
 ###  Create a Customer
 ```bash
-curl -X POST http://localhost:8080/customer -H "Content-Type: application/json" -d '{"name":"Customer","email":"customer@email.com"}'
+curl -X POST http://localhost:8080/customer \
+     -H "Content-Type: application/json" \
+     -d '{"name":"Customer","email":"customer@email.com"}'
 ```
 ### Get a Client by ID
 ```bash
-curl -X http://localhost:8080/customer/1'
+curl -X http://localhost:8080/customer/1
 ```
 ### Get All Clients
 ```bash
-curl -X http://localhost:8080/customer'
+curl -X http://localhost:8080/customer
 ```
 ### Test Validation Error
 ```bash
-curl -X POST http://localhost:8080/customer -H "Content-Type: application/json" -d '{"name":"Customer","email":"invalido"}'
+curl -X POST http://localhost:8080/customer \
+     -H "Content-Type: application/json" \
+     -d '{"name":"Customer","email":"invalido"}'
 ```
 
 ## 🔎 H2 Console
