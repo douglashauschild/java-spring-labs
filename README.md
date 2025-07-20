@@ -10,6 +10,7 @@ The repository is organized into independent subprojects, each focusing on a spe
 |----------------|--------------------------------------------------------------------------|
 | `jwt-auth`     | Implementation of authentication and authorization with JWT using Spring Security. |
 | `hexagonal-api`| REST API built with Hexagonal Architecture (Ports & Adapters).           |
+| `java24-feature-demos` | Practical examples of Java 24 features such as pattern matching, record patterns, stream gatherers, and scoped values. |
 | `...`          | More projects will be added soon.                                        |
 
 ## ✅ Requirements
