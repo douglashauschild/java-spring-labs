@@ -2,15 +2,17 @@
 
 This repository contains practical labs and example projects developed with Java and Spring Boot. The goal is to explore different architectures, design patterns, security approaches, database integrations, and best practices in the Spring ecosystem.
 
+> Feel free to clone, study, adapt, or contribute!
+
 ## 📁 Repository Structure
 
 The repository is organized into independent subprojects, each focusing on a specific approach or functionality:
 
 | Project        | Description                                                              |
 |----------------|--------------------------------------------------------------------------|
+| `java24-feature-demos` | Practical examples of Java 24 features such as pattern matching, record patterns, stream gatherers, and scoped values. |
 | `jwt-auth`     | Implementation of authentication and authorization with JWT using Spring Security. |
 | `hexagonal-api`| REST API built with Hexagonal Architecture (Ports & Adapters).           |
-| `java24-feature-demos` | Practical examples of Java 24 features such as pattern matching, record patterns, stream gatherers, and scoped values. |
 | `...`          | More projects will be added soon.                                        |
 
 ## ✅ Requirements
@@ -41,5 +43,3 @@ cd project-name
 ## 👨🏻‍💻 Author
 Douglas Hauschild  
 [LinkedIn](https://www.linkedin.com/in/douglas-hauschild-66449122b/) | [GitHub](https://github.com/douglashauschild)
-
-Feel free to clone, study, adapt, or contribute!
