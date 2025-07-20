@@ -13,6 +13,8 @@ import org.springframework.web.bind.annotation.RestController;
 import com.github.douglashauschild.hexagonalapi.application.CustomerService;
 import com.github.douglashauschild.hexagonalapi.domain.model.Customer;
 
+import jakarta.validation.Valid;
+
 @RestController
 @RequestMapping("/customer")
 public class CustomerController {
@@ -24,7 +26,7 @@ public class CustomerController {
     }
 
     @PostMapping
-    public ResponseEntity<Customer> create(@RequestBody Customer customer) {
+    public ResponseEntity<Customer> create(@RequestBody @Valid Customer customer) {
         Customer saved = customerService.create(customer);
         return ResponseEntity.ok(saved);
     }

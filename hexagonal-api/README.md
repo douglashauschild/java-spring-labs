@@ -49,7 +49,9 @@ This project follows the principles of **Hexagonal Architecture**:
 	│     └── repository # Domain ports (interfaces)
 	├── infrastructure
 	│     ├── persistence # JPA repository implementations
-	│     └── web # REST controllers (input adapters)
+	│   └── web
+	│        ├── controller      # REST controllers (input adapters)
+	│        └── exception       # Global exception handlers (e.g., validation)	
 	└── config # Spring configuration classes
 ```
 
